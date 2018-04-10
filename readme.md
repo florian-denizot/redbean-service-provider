@@ -8,7 +8,7 @@ A [RedBean ORM](http://redbeanphp.com) ServiceProvider for [Silex](http://silex.
 - Define a db.options array in ```$app``` with *dsn*, *user*, *password* and *frozen* entries.  
   Or just pass the array while registering. see below.
 - Register the Service:
-  ```
+```php
 $app->register(
   new Ivoba\Silex\RedBeanServiceProvider(), 
   array('db.options' => array('dsn' => 'sqlite:/tmp/db.sqlite'))
